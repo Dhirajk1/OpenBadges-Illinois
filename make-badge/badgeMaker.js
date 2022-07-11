@@ -82,4 +82,4 @@ const makeStat107Badge = (id, name, emailHash, salt, host) => {
   return studentBadge.badge;
 };
 
-module.exports = { makeStat107Badge };
+module.exports = makeStat107Badge;
