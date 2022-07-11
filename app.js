@@ -1,9 +1,17 @@
 const express = require("express");
 const app = express();
 
-const { readData } = require("./index.js");
+const { readData } = require("./make-badge/utilities.js");
 
 const students = new Map();
+
+app.listen(process.env.PORT || 3000, async function () {
+  await readData(
+    "./data/students.csv",
+    students,
+    "https://salty-sands-91607.herokuapp.com"
+  );
+});
 
 app.get("/", (_req, res) => {
   let ids = "";
@@ -51,8 +59,4 @@ app.get("/:id/badge", (_req, res) => {
     res.status(404).send("Badge not found");
   }
   res.send(fullBadge.badge);
-});
-
-app.listen(process.env.PORT || 3000, async function () {
-  await readData("./students.csv", students);
 });

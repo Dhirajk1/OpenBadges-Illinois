@@ -19,7 +19,6 @@ class Stat107Badge {
     this.badge.assertion = {
       "@context": "https://w3id.org/openbadges/v2",
       type: "Assertion",
-      //id: "https://badges.imsglobal.org/public/assertions/1geQXkWnQnW0BkWcO3jSPA?v=2_0",
       id: `${host}/${this.id}/fullbadge`,
       image: "https://discovery.cs.illinois.edu/static/dsd.png",
     };
@@ -31,7 +30,6 @@ class Stat107Badge {
       url: "https://discovery.cs.illinois.edu",
       email: "dhiraj2@illinois.edu",
       type: "Issuer",
-      //id: "https://badges.imsglobal.org/public/issuers/PDSlozoSTjircXTKVvuOLg?v=2_0",
       id: `${host}/${this.id}/issuer`,
       name: "University of Illinois @ Urbana-Champaign",
       image: "https://illinois.edu/assets/img/branding/wordmark_vertical.png",
@@ -73,7 +71,7 @@ class Stat107Badge {
           id: this.evidence, //should be a pdf of a certificate
         },
       ],
-      issuedOn: "2017-12-19T22:25:39.446359+00:00",
+      issuedOn: new Date().toISOString(),
       recipient: this.badge.recipient,
     };
   }
