@@ -46,7 +46,6 @@ class Stat107Badge {
       "@context": "https://w3id.org/openbadges/v2",
       description: `Awarded to ${this.name} for the successful completion of STAT107: Data Science Discovery at the University of Illinois at Urbana-Champaign`,
       type: "BadgeClass",
-      //id: "https://badges.imsglobal.org/public/badges/6m-_xam7SFq_sg5lam43Jw?v=2_0",
       id: `${host}/${this.id}/badge`,
       name: "STAT107: Data Science Discovery",
       issuer: this.badge.issuer,
@@ -82,4 +81,5 @@ const makeStat107Badge = (id, name, emailHash, salt, host) => {
   studentBadge.makeBadge(host);
   return studentBadge.badge;
 };
-module.exports = makeStat107Badge;
+
+module.exports = { makeStat107Badge };
