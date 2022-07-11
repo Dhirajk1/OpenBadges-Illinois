@@ -1,0 +1,31 @@
+### Complete badge return (OpenBadgeExample) "id"
+GET https://badges.imsglobal.org/public/assertions/1geQXkWnQnW0BkWcO3jSPA?v=2_0
+### Local Equivalent
+GET http://localhost:3000/fullbadge
+
+### Context (you can keep this the same
+GET https://w3id.org/openbadges/v2
+
+### Badge ID (You need to change this) -> returns the badge
+GET https://badges.imsglobal.org/public/badges/6m-_xam7SFq_sg5lam43Jw?v=2_0
+### Local Equivalent
+GET http://localhost:3000/badge
+
+### Issuer url (You need to change this) -> returns the html about issuer
+GET http://openbadgesvalidator.imsglobal.org/SampleResources/about.html
+### Local Equivalent
+GET https://discovery.cs.illinois.edu/
+
+### Issuer ID (You need to change this) -> returns the issuer
+GET https://badges.imsglobal.org/public/issuers/PDSlozoSTjircXTKVvuOLg?v=2_0
+### Local Equivalent
+GET http://localhost:3000/issuer
+
+### Evidence (You need to change this) -> returns the evidence (PDF/certificate)
+GET http://openbadgesvalidator.imsglobal.org/SampleResources/my-portfolio.pdf
+
+### Recipient (You need to change this) -> returns the recipient (hashed + salted e-mail)
+GET https://badges.imsglobal.org/public/assertions/1geQXkWnQnW0BkWcO3jSPA?v=2_0
+
+### Heroku Testing:
+GET https://salty-sands-91607.herokuapp.com/badge

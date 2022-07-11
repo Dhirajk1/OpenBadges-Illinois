@@ -1,0 +1,10 @@
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "description": "Founded in 1899, Sample University is a world-class institution of higher education.\n\n(Note: This badge issuer is intended for use in the IMS Global certification program.)",
+  "url": "http://openbadgesvalidator.imsglobal.org/SampleResources/about.html",
+  "email": "info@business.sampleuniversity.edu",
+  "type": "Issuer",
+  "id": "https://badges.imsglobal.org/public/issuers/PDSlozoSTjircXTKVvuOLg?v=2_0",
+  "name": "Sample University - College of Business",
+  "image": "https://badges.imsglobal.org/public/issuers/PDSlozoSTjircXTKVvuOLg/image"
+}
